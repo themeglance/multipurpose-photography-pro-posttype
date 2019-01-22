@@ -2,10 +2,10 @@
 /*
  Plugin Name: Multipurpose Photography Pro Posttype
  lugin URI: https://www.vwthemes.com/
- Description: Creating new post type for VW Event Planner Pro Theme.
- Author: VW Themes
+ Description: Creating new post type for Multipurpose Photography Pro Theme.
+ Author: Themesglance Themes
  Version: 1.0
- Author URI: https://www.vwthemes.com/
+ Author URI: https://www.themesglance.com/
 */
 
 define( 'multipurpose_photography_pro_POSTTYPE_VERSION', '1.0' );
