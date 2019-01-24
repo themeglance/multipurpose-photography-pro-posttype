@@ -1,7 +1,7 @@
 <?php 
 /*
  Plugin Name: Multipurpose Photography Pro Posttype
- lugin URI: https://www.vwthemes.com/
+ Plugin URI: https://www.themesglance.com/
  Description: Creating new post type for Multipurpose Photography Pro Theme.
  Author: Themesglance Themes
  Version: 1.0
@@ -147,7 +147,7 @@ function multipurpose_photography_pro_posttype_services_func( $atts ) {
         $thumb = wp_get_attachment_image_src( get_post_thumbnail_id($post_id), 'large' );
         if(has_post_thumbnail()) { $thumb_url = $thumb['0']; }
         if(get_post_meta($post_id,'meta-services-url',true !='')){$custom_url =get_post_meta($post_id,'meta-services-url',true); } else{ $custom_url = get_permalink(); }
-        $services .= '<div class="col-lg-3 col-md-3 col-sm-4 col-6">
+        $services .= '<div class="col-lg-3 col-md-3 col-sm-6 col-6 service-bottom">
                         <div class="services-content">
                           <div class="row services-data">
                             <a href="'.esc_url($custom_url).'">
@@ -383,7 +383,7 @@ function multipurpose_photography_pro_posttype_testimonial_func( $atts ) {
             $thumb_url = $thumb['0'];
           }
           $desigstory= get_post_meta($post_id,'multipurpose_photography_pro_posttype_testimonial_desigstory',true);
-            $testimonial .= '<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+            $testimonial .= '<div class="col-lg-4 col-md-6 col-sm-6 col-12">
                               <div class="testi-data box-testi"> 
                                 <div class="testimonial_box w-100 mb-3" >
                                   <div class="content_box testi-padding">
